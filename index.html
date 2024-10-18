@@ -25,12 +25,13 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre mí</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Proyectos</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolioExtra">Otros trabajos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contactForm">Contáctame</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-primary text-white text-center animated-background">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/FotoPerfil.jpg" alt="..." />
@@ -39,7 +40,8 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon me-1"><i class="fa-solid fa-code"></i></div>
+                    <div class="divider-custom-icon ms-1"><i class="fa-solid fa-pen-nib"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
@@ -61,12 +63,12 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ms-auto"><p class="lead">Soy Marcos De Ozaeta, estudiante de último año del Grado en Diseño y Desarrollo de Videojuegos en la Universidad Rey Juan Carlos (URJC) de Madrid. Mi formación académica me ha proporcionado una sólida base en los aspectos técnicos y creativos del desarrollo de videojuegos, como la programación, el diseño de interfaces intuitivas, modelado y animación 3D, entre otros.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">En esta página web están presentados los distintos trabajos que he ido realizando durante mis estudios, siendo en su mayoría pequeños videojuegos u otros proyectos relacionados con la industria</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">En esta página web están presentados los distintos trabajos que he ido realizando durante mis estudios, siendo en su mayoría pequeños videojuegos u otros proyectos relacionados con la industria.</p></div>
                 </div>
             </div>
         </section>
         <!-- Portfolio Section-->
-        <section class="page-section bg-primary text-white mb-0 portfolio" id="portfolio">
+        <section class="page-section bg-primary text-white mb-0 portfolio animated-background" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Proyectos</h2>
@@ -189,6 +191,74 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact section -->
+        <section class="page-section bg-primary text-white mb-0 portfolio animated-background" id="contactForm">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fa fa-envelope"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <div class="rounded container" style="background-color: rgb(149, 215, 245); padding-top: 5%; padding-bottom: 5%; width: 75%; ">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xl-7" >
+                            <form id="contactForm" class="paddingLeftRight" action="https://formspree.io/f/xnnqqrpe"
+                            method="POST">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control rounded" style="padding-left: 5%;" id="name" type="text" name= "name" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <label style="padding-left: 5%;" for="name">Nombre/Apellidos</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre</div>
+                                </div>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control rounded" style="padding-left: 5%;" id="email" type="email" name ="email"placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <label style="padding-left: 5%;" for="email">Dirección de correo</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un correo</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">El correo no es válido</div>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control rounded" style="padding-left: 5%;" id="phone" type="tel" name= "tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                    <label style="padding-left: 5%;" for="phone">Teléfono</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un teléfono</div>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control rounded" style="padding-left: 5%;" id="message" type="text" name= "message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                    <label style="padding-left: 5%;" for="message">Mensaje</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje</div>
+                                </div>
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Se ha enviado correctamente el formulario</div>
+                                    </div>
+                                </div>
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage">
+                                    <div class="text-center text-danger mb-3">Error al enviar el formulario</div>
+                                </div>
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         
         <!-- Footer-->
         <footer class="footer text-center">
@@ -199,7 +269,7 @@
                         <h4 class="text-uppercase mb-4">Localización</h4>
                         <p class="lead mb-0">
                             Alcalá De Henares, 28804
-                            <br />
+                            <br/>
                             Madrid, España
                         </p>
                     </div>
@@ -213,20 +283,17 @@
                         <a class="btn btn-outline-light btn-social mx-1" href="assets/CV_MarcosDeOzaetaCabadas.pdf"><i class="fa fa-address-book"></i></a>
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Contáctame</h4>
-                        <p class="lead mb-0">
-                            Tlfn: +34 640 348 639
-                            <br/>
-                            Correo: marcos.deozaeta@gmail.com
-                        </p>
+                        <a title= "marcos.deozaeta@gmail.com" class="btn btn-outline-light btn-social mx-1 " href="mailto:marcos.deozaeta@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a title= "+34 640 348 639" class="btn btn-outline-light btn-social mx-1" href="tel:+34 640 348 639"><i class="fa-solid fa-phone"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; 2024 Marcos De Ozaeta Cabadas. Template by <a href="http://startbootstrap.com">Start Bootstrap</a> licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</small></div>
+            <div class="container"><small>Copyright &copy; 2024 Marcos De Ozaeta Cabadas. Template by <a href="http://startbootstrap.com">Start Bootstrap</a> licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a></small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -243,7 +310,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-frog"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -318,7 +385,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-ghost"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -393,7 +460,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-flask-vial"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -470,7 +537,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-shuttle-space"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -507,7 +574,7 @@
                                         <br/>
                                         En este proyecto me encargué de los siguientes aspectos:
                                         <ul class="mb-4 text-left">
-                                            <li>Implementación de funcionalidades básicas</li>
+                                            <li>Implementación de funcionalidades básicas como el movimiento del personaje o de algunos elementos del escenario</li>
                                             <li>Implementación de Paralax y otros efectos visuales</li>
                                         </ul>
                                     </p>
@@ -541,7 +608,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-bread-slice"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -613,7 +680,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-earth-americas"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -674,7 +741,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-school"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -739,7 +806,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-mountain-sun"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -801,7 +868,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-torii-gate"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -851,7 +918,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-paintbrush"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
