@@ -80,6 +80,15 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">KO CUBE</div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/KO_Cube.png" alt="..." />
+                        </div>
+                    </div>
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
@@ -268,7 +277,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Localización</h4>
                         <p class="lead mb-0">
-                            Alcalá De Henares, 28804
+                            Alcalá De Henares
                             <br/>
                             Madrid, España
                         </p>
@@ -296,6 +305,81 @@
             <div class="container"><small>Copyright &copy; 2024 Marcos De Ozaeta Cabadas. Template by <a href="http://startbootstrap.com">Start Bootstrap</a> licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a></small></div>
         </div>
         <!-- Portfolio Modals-->
+         <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">KO CUBE</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-cube"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div id="carouselImages7" class="carousel slide mb-5" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100 img-fluid rounded mb-5" src="assets/img/portfolio/KO_Cube.png" alt="Imagen 1" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-fluid rounded mb-5" src="assets/img/portfolio/KOCUBE/image1.png" alt="Imagen 2" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-fluid rounded mb-5" src="assets/img/portfolio/KOCUBE/image2.png" alt="Imagen 3" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-fluid rounded mb-5" src="assets/img/portfolio/KOCUBE/image3.png" alt="Imagen 4" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                    <img class="d-block w-100 img-fluid rounded mb-5" src="assets/img/portfolio/KOCUBE/image4.png" alt="Imagen 5" />
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages7" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselImages7" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-left">Este juego de navegador desarrollado con Unity en WebGL es un Hero Shooter 3v3 en vista cenital con estilo voxel art.
+                                         Los jugadores deberán luchar por objetivos distintos en mapas variados para vencer al equipo contrario. 
+                                         Los personajes tendrán distintos roles y habilidades que deberán combinar con el resto de su equipo para alzarse con la victoria.
+                                        <br/>
+                                        En este proyecto me encargué de los siguientes aspectos:
+                                        <br/>
+                                        <ul class="mb-4 text-left">
+                                            <li>Modelado y animación de dos de los personajes: Bale y Judy.</li>
+                                            <li>Implementación de ataques básicos y habilidades de Bale y Judy.</li>
+                                            <li>Implementación de la interfaz en el motor de Unity, cuidando aspectos como la responsividad o la usabilidad.</li>
+                                            <li>Creación de los efectos de sonido y banda sonora, y su implementación correspondiente.</li>
+                                        </ul>
+                                    </p>
+                                    <p class="mb-4 text-left">
+                                        <br/>Puedes probar el juego en Itchio: 
+                                        <br/>
+                                        <br/> - Itchio: <a href="https://flatwall-games.itch.io/kocube">haz click aquí</a>
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Volver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -642,8 +726,13 @@
                                         <br/>
                                         Es un juego del género Roguelike en el que deberás ir avanzando por una mazmorra derrotando a gran variedad de enemigos y jefes, utilizando distintas armas que irás encontrando por las distintas salas.
                                         <br/>
-                                        Nota: No confundir con la versión robada por uno de los desarrolladores y publicada en Steam por cuenta propia.
                                         <br/>
+                                        <em><b>
+                                        Nota: No confundir con la versión robada por uno de los desarrolladores y publicada en Steam por cuenta propia.
+                                        </b></em>
+                                        <br/>
+                                        <br/>
+                                        En este proyecto me encargué de los siguientes aspectos:
                                         <ul class="mb-4 text-left">
                                             <li>Diseño del juego</li>
                                             <li>Diseño, arte final, y animación de enemigos</li>
@@ -893,6 +982,9 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4 text-left">
                                         El escenario, criaturas y personaje han sido modelados y animados en 3DsMax, y posteriormente se han incluido en un proyecto de Unity para poder mover al personaje.
+                                    </p>
+                                    <p class="mb-4 text-left">
+                                        Las físicas de las telas se han implementado con un script propio.
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
